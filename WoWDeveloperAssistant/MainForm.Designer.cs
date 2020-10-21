@@ -29,8 +29,18 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -39,16 +49,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
@@ -147,6 +147,34 @@
             this.label_Achievement_Name = new System.Windows.Forms.Label();
             this.textBoxAchievements_Id = new System.Windows.Forms.TextBox();
             this.label_Achievements_Id = new System.Windows.Forms.Label();
+            this.tabPage_Conditions_Creator = new System.Windows.Forms.TabPage();
+            this.button_ClearConditions = new System.Windows.Forms.Button();
+            this.button_AddCondition = new System.Windows.Forms.Button();
+            this.textBox_ConditionsOutput = new System.Windows.Forms.TextBox();
+            this.label_ScriptName = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label_ConditionValue3 = new System.Windows.Forms.Label();
+            this.labelConditionValue2 = new System.Windows.Forms.Label();
+            this.label_ConditionValue1 = new System.Windows.Forms.Label();
+            this.textBox_ScriptName = new System.Windows.Forms.TextBox();
+            this.textBox_NegativeCondition = new System.Windows.Forms.TextBox();
+            this.textBox_ConditionValue3 = new System.Windows.Forms.TextBox();
+            this.textBox_ConditionValue2 = new System.Windows.Forms.TextBox();
+            this.textBox_ConditionValue1 = new System.Windows.Forms.TextBox();
+            this.textBox_ConditionTarget = new System.Windows.Forms.TextBox();
+            this.label_ConditionTarget = new System.Windows.Forms.Label();
+            this.label_ConditionType = new System.Windows.Forms.Label();
+            this.comboBox_ConditionType = new System.Windows.Forms.ComboBox();
+            this.textBox_ElseGroup = new System.Windows.Forms.TextBox();
+            this.label_ElseGroup = new System.Windows.Forms.Label();
+            this.textBox_SourceId = new System.Windows.Forms.TextBox();
+            this.label_SourceId = new System.Windows.Forms.Label();
+            this.textBox_SourceEntry = new System.Windows.Forms.TextBox();
+            this.label_SourceEntry = new System.Windows.Forms.Label();
+            this.textBox_SourceGroup = new System.Windows.Forms.TextBox();
+            this.label_ConditionSourceGroup = new System.Windows.Forms.Label();
+            this.comboBox_ConditionSourceType = new System.Windows.Forms.ComboBox();
+            this.label_ConditionSourceType = new System.Windows.Forms.Label();
             this.statusStrip_LoadedFile = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel_FileStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel_CurrentAction = new System.Windows.Forms.ToolStripStatusLabel();
@@ -166,6 +194,7 @@
             this.tabPage_DoubleSpawnsRemover.SuspendLayout();
             this.coreScriptTemplates.SuspendLayout();
             this.tabPage_Achievements.SuspendLayout();
+            this.tabPage_Conditions_Creator.SuspendLayout();
             this.statusStrip_LoadedFile.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -178,6 +207,7 @@
             this.tabControl.Controls.Add(this.tabPage_DoubleSpawnsRemover);
             this.tabControl.Controls.Add(this.coreScriptTemplates);
             this.tabControl.Controls.Add(this.tabPage_Achievements);
+            this.tabControl.Controls.Add(this.tabPage_Conditions_Creator);
             this.tabControl.Location = new System.Drawing.Point(3, 3);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
@@ -192,7 +222,7 @@
             this.tabPage_CreatureScriptsCreator.Controls.Add(this.toolStrip_CSC);
             this.tabPage_CreatureScriptsCreator.Location = new System.Drawing.Point(4, 29);
             this.tabPage_CreatureScriptsCreator.Name = "tabPage_CreatureScriptsCreator";
-            this.tabPage_CreatureScriptsCreator.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage_CreatureScriptsCreator.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.tabPage_CreatureScriptsCreator.Size = new System.Drawing.Size(2040, 955);
             this.tabPage_CreatureScriptsCreator.TabIndex = 0;
             this.tabPage_CreatureScriptsCreator.Text = "Creature Scripts Creator";
@@ -245,8 +275,8 @@
             // SpellId
             // 
             this.SpellId.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.SpellId.DefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.SpellId.DefaultCellStyle = dataGridViewCellStyle9;
             this.SpellId.HeaderText = "SpellId";
             this.SpellId.MaxInputLength = 10;
             this.SpellId.MinimumWidth = 8;
@@ -257,8 +287,8 @@
             // SpellName
             // 
             this.SpellName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.SpellName.DefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.SpellName.DefaultCellStyle = dataGridViewCellStyle10;
             this.SpellName.HeaderText = "SpellName";
             this.SpellName.MaxInputLength = 50;
             this.SpellName.MinimumWidth = 8;
@@ -269,8 +299,8 @@
             // CastTime
             // 
             this.CastTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CastTime.DefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CastTime.DefaultCellStyle = dataGridViewCellStyle19;
             this.CastTime.HeaderText = "CastTime";
             this.CastTime.MaxInputLength = 10;
             this.CastTime.MinimumWidth = 8;
@@ -281,8 +311,8 @@
             // MinCastStartTime
             // 
             this.MinCastStartTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.MinCastStartTime.DefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.MinCastStartTime.DefaultCellStyle = dataGridViewCellStyle20;
             this.MinCastStartTime.HeaderText = "MinCastStartTime";
             this.MinCastStartTime.MaxInputLength = 10;
             this.MinCastStartTime.MinimumWidth = 8;
@@ -293,8 +323,8 @@
             // MaxCastStartTime
             // 
             this.MaxCastStartTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.MaxCastStartTime.DefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.MaxCastStartTime.DefaultCellStyle = dataGridViewCellStyle33;
             this.MaxCastStartTime.HeaderText = "MaxCastStartTime";
             this.MaxCastStartTime.MaxInputLength = 10;
             this.MaxCastStartTime.MinimumWidth = 8;
@@ -305,8 +335,8 @@
             // MinCastRepeatTime
             // 
             this.MinCastRepeatTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.MinCastRepeatTime.DefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.MinCastRepeatTime.DefaultCellStyle = dataGridViewCellStyle34;
             this.MinCastRepeatTime.HeaderText = "MinCastRepeatTime";
             this.MinCastRepeatTime.MaxInputLength = 10;
             this.MinCastRepeatTime.MinimumWidth = 8;
@@ -317,8 +347,8 @@
             // MaxCastRepeatTime
             // 
             this.MaxCastRepeatTime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.MaxCastRepeatTime.DefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.MaxCastRepeatTime.DefaultCellStyle = dataGridViewCellStyle35;
             this.MaxCastRepeatTime.HeaderText = "MaxCastRepeatTime";
             this.MaxCastRepeatTime.MaxInputLength = 10;
             this.MaxCastRepeatTime.MinimumWidth = 8;
@@ -329,8 +359,8 @@
             // CastsCount
             // 
             this.CastsCount.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.CastsCount.DefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.CastsCount.DefaultCellStyle = dataGridViewCellStyle36;
             this.CastsCount.HeaderText = "CastsCount";
             this.CastsCount.MaxInputLength = 4;
             this.CastsCount.MinimumWidth = 8;
@@ -407,7 +437,7 @@
             this.toolStripButton_CSC_ImportSniff.Image = global::WoWDeveloperAssistant.Properties.Resources.PIC_Import;
             this.toolStripButton_CSC_ImportSniff.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton_CSC_ImportSniff.Name = "toolStripButton_CSC_ImportSniff";
-            this.toolStripButton_CSC_ImportSniff.Size = new System.Drawing.Size(128, 33);
+            this.toolStripButton_CSC_ImportSniff.Size = new System.Drawing.Size(128, 29);
             this.toolStripButton_CSC_ImportSniff.Text = "Import Sniff";
             this.toolStripButton_CSC_ImportSniff.Click += new System.EventHandler(this.toolStripButton_ImportSniff_Click);
             // 
@@ -418,7 +448,7 @@
             this.toolStripButton_CSC_Search.Image = global::WoWDeveloperAssistant.Properties.Resources.PIC_Search;
             this.toolStripButton_CSC_Search.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton_CSC_Search.Name = "toolStripButton_CSC_Search";
-            this.toolStripButton_CSC_Search.Size = new System.Drawing.Size(84, 33);
+            this.toolStripButton_CSC_Search.Size = new System.Drawing.Size(84, 29);
             this.toolStripButton_CSC_Search.Text = "Search";
             this.toolStripButton_CSC_Search.Click += new System.EventHandler(this.toolStripButton_Search_Click);
             // 
@@ -429,7 +459,7 @@
             this.toolStripTextBox_CSC_CreatureEntry.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripTextBox_CSC_CreatureEntry.MaxLength = 40;
             this.toolStripTextBox_CSC_CreatureEntry.Name = "toolStripTextBox_CSC_CreatureEntry";
-            this.toolStripTextBox_CSC_CreatureEntry.Size = new System.Drawing.Size(100, 38);
+            this.toolStripTextBox_CSC_CreatureEntry.Size = new System.Drawing.Size(100, 34);
             this.toolStripTextBox_CSC_CreatureEntry.KeyUp += new System.Windows.Forms.KeyEventHandler(this.toolStripTextBox_CSC_CreatureEntrySearch_Enter);
             // 
             // toolStripLabel_CSC_CreatureEntry
@@ -437,14 +467,14 @@
             this.toolStripLabel_CSC_CreatureEntry.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripLabel_CSC_CreatureEntry.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.toolStripLabel_CSC_CreatureEntry.Name = "toolStripLabel_CSC_CreatureEntry";
-            this.toolStripLabel_CSC_CreatureEntry.Size = new System.Drawing.Size(184, 33);
+            this.toolStripLabel_CSC_CreatureEntry.Size = new System.Drawing.Size(184, 29);
             this.toolStripLabel_CSC_CreatureEntry.Text = "Creature EntryOrGuid:";
             // 
             // toolStripSeparator_CSC
             // 
             this.toolStripSeparator_CSC.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripSeparator_CSC.Name = "toolStripSeparator_CSC";
-            this.toolStripSeparator_CSC.Size = new System.Drawing.Size(6, 38);
+            this.toolStripSeparator_CSC.Size = new System.Drawing.Size(6, 34);
             // 
             // tabPage_WaypointsCreator
             // 
@@ -454,7 +484,7 @@
             this.tabPage_WaypointsCreator.Controls.Add(this.toolStrip_WC);
             this.tabPage_WaypointsCreator.Location = new System.Drawing.Point(4, 29);
             this.tabPage_WaypointsCreator.Name = "tabPage_WaypointsCreator";
-            this.tabPage_WaypointsCreator.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage_WaypointsCreator.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.tabPage_WaypointsCreator.Size = new System.Drawing.Size(2040, 955);
             this.tabPage_WaypointsCreator.TabIndex = 4;
             this.tabPage_WaypointsCreator.Text = "Waypoints Creator";
@@ -466,18 +496,18 @@
             this.grid_WC_Waypoints.AllowUserToDeleteRows = false;
             this.grid_WC_Waypoints.AllowUserToResizeColumns = false;
             this.grid_WC_Waypoints.AllowUserToResizeRows = false;
-            dataGridViewCellStyle29.NullValue = null;
-            this.grid_WC_Waypoints.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle21.NullValue = null;
+            this.grid_WC_Waypoints.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle21;
             this.grid_WC_Waypoints.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
-            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle30.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle30.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle30.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle30.NullValue = null;
-            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle30.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grid_WC_Waypoints.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle22.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle22.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle22.NullValue = null;
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grid_WC_Waypoints.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle22;
             this.grid_WC_Waypoints.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grid_WC_Waypoints.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.gridColumn_Id,
@@ -490,15 +520,15 @@
             this.gridColumn_HasScript,
             this.WaypointSource});
             this.grid_WC_Waypoints.ContextMenuStrip = this.contextMenuStrip_WC;
-            dataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle39.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle39.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle39.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle39.NullValue = null;
-            dataGridViewCellStyle39.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle39.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle39.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.grid_WC_Waypoints.DefaultCellStyle = dataGridViewCellStyle39;
+            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle31.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle31.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle31.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle31.NullValue = null;
+            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.grid_WC_Waypoints.DefaultCellStyle = dataGridViewCellStyle31;
             this.grid_WC_Waypoints.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.grid_WC_Waypoints.Enabled = false;
             this.grid_WC_Waypoints.Location = new System.Drawing.Point(1274, 49);
@@ -506,8 +536,8 @@
             this.grid_WC_Waypoints.Name = "grid_WC_Waypoints";
             this.grid_WC_Waypoints.RowHeadersWidth = 62;
             this.grid_WC_Waypoints.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle40.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grid_WC_Waypoints.RowsDefaultCellStyle = dataGridViewCellStyle40;
+            dataGridViewCellStyle32.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grid_WC_Waypoints.RowsDefaultCellStyle = dataGridViewCellStyle32;
             this.grid_WC_Waypoints.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.grid_WC_Waypoints.Size = new System.Drawing.Size(758, 886);
             this.grid_WC_Waypoints.TabIndex = 28;
@@ -515,8 +545,8 @@
             // 
             // gridColumn_Id
             // 
-            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.gridColumn_Id.DefaultCellStyle = dataGridViewCellStyle31;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.gridColumn_Id.DefaultCellStyle = dataGridViewCellStyle23;
             this.gridColumn_Id.HeaderText = "Id";
             this.gridColumn_Id.MinimumWidth = 8;
             this.gridColumn_Id.Name = "gridColumn_Id";
@@ -526,9 +556,9 @@
             // 
             // gridColumn_PosX
             // 
-            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle32.NullValue = null;
-            this.gridColumn_PosX.DefaultCellStyle = dataGridViewCellStyle32;
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle24.NullValue = null;
+            this.gridColumn_PosX.DefaultCellStyle = dataGridViewCellStyle24;
             this.gridColumn_PosX.HeaderText = "PosX";
             this.gridColumn_PosX.MinimumWidth = 8;
             this.gridColumn_PosX.Name = "gridColumn_PosX";
@@ -538,9 +568,9 @@
             // 
             // gridColumn_PosY
             // 
-            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle33.NullValue = null;
-            this.gridColumn_PosY.DefaultCellStyle = dataGridViewCellStyle33;
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle25.NullValue = null;
+            this.gridColumn_PosY.DefaultCellStyle = dataGridViewCellStyle25;
             this.gridColumn_PosY.HeaderText = "PosY";
             this.gridColumn_PosY.MinimumWidth = 8;
             this.gridColumn_PosY.Name = "gridColumn_PosY";
@@ -550,8 +580,8 @@
             // 
             // gridColumn_PosZ
             // 
-            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.gridColumn_PosZ.DefaultCellStyle = dataGridViewCellStyle34;
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.gridColumn_PosZ.DefaultCellStyle = dataGridViewCellStyle26;
             this.gridColumn_PosZ.HeaderText = "PosZ";
             this.gridColumn_PosZ.MinimumWidth = 8;
             this.gridColumn_PosZ.Name = "gridColumn_PosZ";
@@ -561,8 +591,8 @@
             // 
             // gridColumn_Orientation
             // 
-            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.gridColumn_Orientation.DefaultCellStyle = dataGridViewCellStyle35;
+            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.gridColumn_Orientation.DefaultCellStyle = dataGridViewCellStyle27;
             this.gridColumn_Orientation.HeaderText = "Orientation";
             this.gridColumn_Orientation.MinimumWidth = 8;
             this.gridColumn_Orientation.Name = "gridColumn_Orientation";
@@ -571,8 +601,8 @@
             // 
             // gridColumn_WCTime
             // 
-            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.gridColumn_WCTime.DefaultCellStyle = dataGridViewCellStyle36;
+            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.gridColumn_WCTime.DefaultCellStyle = dataGridViewCellStyle28;
             this.gridColumn_WCTime.HeaderText = "Time";
             this.gridColumn_WCTime.MinimumWidth = 8;
             this.gridColumn_WCTime.Name = "gridColumn_WCTime";
@@ -581,8 +611,8 @@
             // 
             // gridColumn_WCDelay
             // 
-            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.gridColumn_WCDelay.DefaultCellStyle = dataGridViewCellStyle37;
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.gridColumn_WCDelay.DefaultCellStyle = dataGridViewCellStyle29;
             this.gridColumn_WCDelay.HeaderText = "Delay";
             this.gridColumn_WCDelay.MinimumWidth = 8;
             this.gridColumn_WCDelay.Name = "gridColumn_WCDelay";
@@ -590,8 +620,8 @@
             // 
             // gridColumn_HasScript
             // 
-            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.gridColumn_HasScript.DefaultCellStyle = dataGridViewCellStyle38;
+            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.gridColumn_HasScript.DefaultCellStyle = dataGridViewCellStyle30;
             this.gridColumn_HasScript.HeaderText = "HasScript";
             this.gridColumn_HasScript.MinimumWidth = 8;
             this.gridColumn_HasScript.Name = "gridColumn_HasScript";
@@ -773,7 +803,7 @@
             this.toolStripButton_WC_LoadSniff});
             this.toolStrip_WC.Location = new System.Drawing.Point(3, 3);
             this.toolStrip_WC.Name = "toolStrip_WC";
-            this.toolStrip_WC.Size = new System.Drawing.Size(2034, 38);
+            this.toolStrip_WC.Size = new System.Drawing.Size(2034, 34);
             this.toolStrip_WC.TabIndex = 24;
             this.toolStrip_WC.Text = "toolStrip_WC";
             // 
@@ -784,7 +814,7 @@
             this.toolStripButton_WC_Search.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton_WC_Search.Image")));
             this.toolStripButton_WC_Search.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton_WC_Search.Name = "toolStripButton_WC_Search";
-            this.toolStripButton_WC_Search.Size = new System.Drawing.Size(84, 33);
+            this.toolStripButton_WC_Search.Size = new System.Drawing.Size(84, 29);
             this.toolStripButton_WC_Search.Text = "Search";
             this.toolStripButton_WC_Search.ToolTipText = "Fill listbox with guids of\r\nselected entry or all entries.";
             this.toolStripButton_WC_Search.Click += new System.EventHandler(this.toolStripButton_WCSearch_Click);
@@ -842,7 +872,7 @@
             this.tabPage_Output.Controls.Add(this.textBox_SQLOutput);
             this.tabPage_Output.Location = new System.Drawing.Point(4, 29);
             this.tabPage_Output.Name = "tabPage_Output";
-            this.tabPage_Output.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage_Output.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.tabPage_Output.Size = new System.Drawing.Size(2040, 955);
             this.tabPage_Output.TabIndex = 1;
             this.tabPage_Output.Text = "SQL Output";
@@ -872,7 +902,7 @@
             this.tabPage_DatabaseAdvisor.Controls.Add(this.label_CreatureFlags);
             this.tabPage_DatabaseAdvisor.Location = new System.Drawing.Point(4, 29);
             this.tabPage_DatabaseAdvisor.Name = "tabPage_DatabaseAdvisor";
-            this.tabPage_DatabaseAdvisor.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage_DatabaseAdvisor.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.tabPage_DatabaseAdvisor.Size = new System.Drawing.Size(2040, 955);
             this.tabPage_DatabaseAdvisor.TabIndex = 2;
             this.tabPage_DatabaseAdvisor.Text = "Database Advisor";
@@ -880,7 +910,7 @@
             // 
             // textBox_SpellDestinations
             // 
-            this.textBox_SpellDestinations.Location = new System.Drawing.Point(7, 198);
+            this.textBox_SpellDestinations.Location = new System.Drawing.Point(8, 198);
             this.textBox_SpellDestinations.Name = "textBox_SpellDestinations";
             this.textBox_SpellDestinations.Size = new System.Drawing.Size(140, 26);
             this.textBox_SpellDestinations.TabIndex = 7;
@@ -955,7 +985,7 @@
             this.tabPage_DoubleSpawnsRemover.Controls.Add(this.button_ImportFileForRemoving);
             this.tabPage_DoubleSpawnsRemover.Location = new System.Drawing.Point(4, 29);
             this.tabPage_DoubleSpawnsRemover.Name = "tabPage_DoubleSpawnsRemover";
-            this.tabPage_DoubleSpawnsRemover.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage_DoubleSpawnsRemover.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.tabPage_DoubleSpawnsRemover.Size = new System.Drawing.Size(2040, 955);
             this.tabPage_DoubleSpawnsRemover.TabIndex = 3;
             this.tabPage_DoubleSpawnsRemover.Text = "Double-Spawns Remover";
@@ -1032,7 +1062,7 @@
             this.coreScriptTemplates.Controls.Add(this.listBox_CoreScriptTemplates_Hooks);
             this.coreScriptTemplates.Location = new System.Drawing.Point(4, 29);
             this.coreScriptTemplates.Name = "coreScriptTemplates";
-            this.coreScriptTemplates.Padding = new System.Windows.Forms.Padding(3);
+            this.coreScriptTemplates.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.coreScriptTemplates.Size = new System.Drawing.Size(2040, 955);
             this.coreScriptTemplates.TabIndex = 5;
             this.coreScriptTemplates.Text = "Core Script Templates";
@@ -1049,7 +1079,7 @@
             // label_CoreScriptTemplates_ScriptType
             // 
             this.label_CoreScriptTemplates_ScriptType.AutoSize = true;
-            this.label_CoreScriptTemplates_ScriptType.Location = new System.Drawing.Point(6, 13);
+            this.label_CoreScriptTemplates_ScriptType.Location = new System.Drawing.Point(6, 12);
             this.label_CoreScriptTemplates_ScriptType.Name = "label_CoreScriptTemplates_ScriptType";
             this.label_CoreScriptTemplates_ScriptType.Size = new System.Drawing.Size(92, 20);
             this.label_CoreScriptTemplates_ScriptType.TabIndex = 5;
@@ -1063,7 +1093,7 @@
             "AreaTrigger",
             "Spell",
             "PlayerScript"});
-            this.comboBox_CoreScriptTemplates_ScriptType.Location = new System.Drawing.Point(104, 10);
+            this.comboBox_CoreScriptTemplates_ScriptType.Location = new System.Drawing.Point(104, 9);
             this.comboBox_CoreScriptTemplates_ScriptType.Name = "comboBox_CoreScriptTemplates_ScriptType";
             this.comboBox_CoreScriptTemplates_ScriptType.Size = new System.Drawing.Size(121, 28);
             this.comboBox_CoreScriptTemplates_ScriptType.TabIndex = 1;
@@ -1072,7 +1102,7 @@
             // label_CoreScriptTemplates_Entry
             // 
             this.label_CoreScriptTemplates_Entry.AutoSize = true;
-            this.label_CoreScriptTemplates_Entry.Location = new System.Drawing.Point(263, 13);
+            this.label_CoreScriptTemplates_Entry.Location = new System.Drawing.Point(262, 12);
             this.label_CoreScriptTemplates_Entry.Name = "label_CoreScriptTemplates_Entry";
             this.label_CoreScriptTemplates_Entry.Size = new System.Drawing.Size(120, 20);
             this.label_CoreScriptTemplates_Entry.TabIndex = 4;
@@ -1081,7 +1111,7 @@
             // textBox_CoreScriptTemplates_Entry
             // 
             this.textBox_CoreScriptTemplates_Entry.Enabled = false;
-            this.textBox_CoreScriptTemplates_Entry.Location = new System.Drawing.Point(389, 10);
+            this.textBox_CoreScriptTemplates_Entry.Location = new System.Drawing.Point(388, 9);
             this.textBox_CoreScriptTemplates_Entry.MaxLength = 6;
             this.textBox_CoreScriptTemplates_Entry.Name = "textBox_CoreScriptTemplates_Entry";
             this.textBox_CoreScriptTemplates_Entry.Size = new System.Drawing.Size(70, 26);
@@ -1119,7 +1149,7 @@
             this.tabPage_Achievements.Controls.Add(this.label_Achievements_Id);
             this.tabPage_Achievements.Location = new System.Drawing.Point(4, 29);
             this.tabPage_Achievements.Name = "tabPage_Achievements";
-            this.tabPage_Achievements.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage_Achievements.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.tabPage_Achievements.Size = new System.Drawing.Size(2040, 955);
             this.tabPage_Achievements.TabIndex = 6;
             this.tabPage_Achievements.Text = "Achievements";
@@ -1136,15 +1166,15 @@
             // 
             // treeView_Achievements_ModifierTreeChildNodes
             // 
-            this.treeView_Achievements_ModifierTreeChildNodes.Location = new System.Drawing.Point(1523, 251);
+            this.treeView_Achievements_ModifierTreeChildNodes.Location = new System.Drawing.Point(1522, 251);
             this.treeView_Achievements_ModifierTreeChildNodes.Name = "treeView_Achievements_ModifierTreeChildNodes";
-            this.treeView_Achievements_ModifierTreeChildNodes.Size = new System.Drawing.Size(500, 680);
+            this.treeView_Achievements_ModifierTreeChildNodes.Size = new System.Drawing.Size(500, 679);
             this.treeView_Achievements_ModifierTreeChildNodes.TabIndex = 15;
             // 
             // label_Achievements_ModifierTrees
             // 
             this.label_Achievements_ModifierTrees.AutoSize = true;
-            this.label_Achievements_ModifierTrees.Location = new System.Drawing.Point(1211, 226);
+            this.label_Achievements_ModifierTrees.Location = new System.Drawing.Point(1210, 226);
             this.label_Achievements_ModifierTrees.Name = "label_Achievements_ModifierTrees";
             this.label_Achievements_ModifierTrees.Size = new System.Drawing.Size(113, 20);
             this.label_Achievements_ModifierTrees.TabIndex = 14;
@@ -1154,7 +1184,7 @@
             // 
             this.treeView_Achievements_ModifierTrees.Location = new System.Drawing.Point(1017, 251);
             this.treeView_Achievements_ModifierTrees.Name = "treeView_Achievements_ModifierTrees";
-            this.treeView_Achievements_ModifierTrees.Size = new System.Drawing.Size(500, 680);
+            this.treeView_Achievements_ModifierTrees.Size = new System.Drawing.Size(500, 679);
             this.treeView_Achievements_ModifierTrees.TabIndex = 13;
             this.treeView_Achievements_ModifierTrees.AfterCollapse += new System.Windows.Forms.TreeViewEventHandler(this.TreeView_Achievements_ModifierTrees_AfterCollapse);
             this.treeView_Achievements_ModifierTrees.AfterExpand += new System.Windows.Forms.TreeViewEventHandler(this.TreeView_Achievements_ModifierTrees_AfterExpand);
@@ -1170,9 +1200,9 @@
             // 
             // treeView_Achievements_Criterias
             // 
-            this.treeView_Achievements_Criterias.Location = new System.Drawing.Point(511, 251);
+            this.treeView_Achievements_Criterias.Location = new System.Drawing.Point(512, 251);
             this.treeView_Achievements_Criterias.Name = "treeView_Achievements_Criterias";
-            this.treeView_Achievements_Criterias.Size = new System.Drawing.Size(500, 680);
+            this.treeView_Achievements_Criterias.Size = new System.Drawing.Size(500, 679);
             this.treeView_Achievements_Criterias.TabIndex = 11;
             this.treeView_Achievements_Criterias.AfterCollapse += new System.Windows.Forms.TreeViewEventHandler(this.TreeView_Achievements_Criterias_AfterCollapse);
             this.treeView_Achievements_Criterias.AfterExpand += new System.Windows.Forms.TreeViewEventHandler(this.TreeView_Achievements_Criterias_AfterExpand);
@@ -1180,7 +1210,7 @@
             // label_Achievements_CriteriaTree_Amount
             // 
             this.label_Achievements_CriteriaTree_Amount.AutoSize = true;
-            this.label_Achievements_CriteriaTree_Amount.Location = new System.Drawing.Point(6, 170);
+            this.label_Achievements_CriteriaTree_Amount.Location = new System.Drawing.Point(6, 169);
             this.label_Achievements_CriteriaTree_Amount.Name = "label_Achievements_CriteriaTree_Amount";
             this.label_Achievements_CriteriaTree_Amount.Size = new System.Drawing.Size(159, 20);
             this.label_Achievements_CriteriaTree_Amount.TabIndex = 10;
@@ -1189,7 +1219,7 @@
             // label_Achievements_CreteriaThreeChilds
             // 
             this.label_Achievements_CreteriaThreeChilds.AutoSize = true;
-            this.label_Achievements_CreteriaThreeChilds.Location = new System.Drawing.Point(161, 228);
+            this.label_Achievements_CreteriaThreeChilds.Location = new System.Drawing.Point(160, 228);
             this.label_Achievements_CreteriaThreeChilds.Name = "label_Achievements_CreteriaThreeChilds";
             this.label_Achievements_CreteriaThreeChilds.Size = new System.Drawing.Size(188, 20);
             this.label_Achievements_CreteriaThreeChilds.TabIndex = 9;
@@ -1207,7 +1237,7 @@
             // label_Achievements_CriteriaTreeName
             // 
             this.label_Achievements_CriteriaTreeName.AutoSize = true;
-            this.label_Achievements_CriteriaTreeName.Location = new System.Drawing.Point(5, 145);
+            this.label_Achievements_CriteriaTreeName.Location = new System.Drawing.Point(4, 145);
             this.label_Achievements_CriteriaTreeName.Name = "label_Achievements_CriteriaTreeName";
             this.label_Achievements_CriteriaTreeName.Size = new System.Drawing.Size(145, 20);
             this.label_Achievements_CriteriaTreeName.TabIndex = 7;
@@ -1234,7 +1264,7 @@
             // label_Achievements_Faction
             // 
             this.label_Achievements_Faction.AutoSize = true;
-            this.label_Achievements_Faction.Location = new System.Drawing.Point(5, 60);
+            this.label_Achievements_Faction.Location = new System.Drawing.Point(4, 60);
             this.label_Achievements_Faction.Name = "label_Achievements_Faction";
             this.label_Achievements_Faction.Size = new System.Drawing.Size(166, 20);
             this.label_Achievements_Faction.TabIndex = 4;
@@ -1242,9 +1272,9 @@
             // 
             // treeView_Achievements_ChildNodes
             // 
-            this.treeView_Achievements_ChildNodes.Location = new System.Drawing.Point(5, 251);
+            this.treeView_Achievements_ChildNodes.Location = new System.Drawing.Point(4, 251);
             this.treeView_Achievements_ChildNodes.Name = "treeView_Achievements_ChildNodes";
-            this.treeView_Achievements_ChildNodes.Size = new System.Drawing.Size(500, 680);
+            this.treeView_Achievements_ChildNodes.Size = new System.Drawing.Size(500, 679);
             this.treeView_Achievements_ChildNodes.TabIndex = 3;
             this.treeView_Achievements_ChildNodes.AfterCollapse += new System.Windows.Forms.TreeViewEventHandler(this.TreeView_Achievements_ChildNodes_AfterCollapse);
             this.treeView_Achievements_ChildNodes.AfterExpand += new System.Windows.Forms.TreeViewEventHandler(this.TreeView_Achievements_ChildNodes_AfterExpand);
@@ -1252,7 +1282,7 @@
             // label_Achievement_Name
             // 
             this.label_Achievement_Name.AutoSize = true;
-            this.label_Achievement_Name.Location = new System.Drawing.Point(5, 35);
+            this.label_Achievement_Name.Location = new System.Drawing.Point(4, 35);
             this.label_Achievement_Name.Name = "label_Achievement_Name";
             this.label_Achievement_Name.Size = new System.Drawing.Size(155, 20);
             this.label_Achievement_Name.TabIndex = 2;
@@ -1269,16 +1299,311 @@
             // label_Achievements_Id
             // 
             this.label_Achievements_Id.AutoSize = true;
-            this.label_Achievements_Id.Location = new System.Drawing.Point(5, 8);
+            this.label_Achievements_Id.Location = new System.Drawing.Point(4, 8);
             this.label_Achievements_Id.Name = "label_Achievements_Id";
             this.label_Achievements_Id.Size = new System.Drawing.Size(123, 20);
             this.label_Achievements_Id.TabIndex = 0;
             this.label_Achievements_Id.Text = "Achievement Id:";
             // 
+            // tabPage_Conditions_Creator
+            // 
+            this.tabPage_Conditions_Creator.Controls.Add(this.button_ClearConditions);
+            this.tabPage_Conditions_Creator.Controls.Add(this.button_AddCondition);
+            this.tabPage_Conditions_Creator.Controls.Add(this.textBox_ConditionsOutput);
+            this.tabPage_Conditions_Creator.Controls.Add(this.label_ScriptName);
+            this.tabPage_Conditions_Creator.Controls.Add(this.label3);
+            this.tabPage_Conditions_Creator.Controls.Add(this.label_ConditionValue3);
+            this.tabPage_Conditions_Creator.Controls.Add(this.labelConditionValue2);
+            this.tabPage_Conditions_Creator.Controls.Add(this.label_ConditionValue1);
+            this.tabPage_Conditions_Creator.Controls.Add(this.textBox_ScriptName);
+            this.tabPage_Conditions_Creator.Controls.Add(this.textBox_NegativeCondition);
+            this.tabPage_Conditions_Creator.Controls.Add(this.textBox_ConditionValue3);
+            this.tabPage_Conditions_Creator.Controls.Add(this.textBox_ConditionValue2);
+            this.tabPage_Conditions_Creator.Controls.Add(this.textBox_ConditionValue1);
+            this.tabPage_Conditions_Creator.Controls.Add(this.textBox_ConditionTarget);
+            this.tabPage_Conditions_Creator.Controls.Add(this.label_ConditionTarget);
+            this.tabPage_Conditions_Creator.Controls.Add(this.label_ConditionType);
+            this.tabPage_Conditions_Creator.Controls.Add(this.comboBox_ConditionType);
+            this.tabPage_Conditions_Creator.Controls.Add(this.textBox_ElseGroup);
+            this.tabPage_Conditions_Creator.Controls.Add(this.label_ElseGroup);
+            this.tabPage_Conditions_Creator.Controls.Add(this.textBox_SourceId);
+            this.tabPage_Conditions_Creator.Controls.Add(this.label_SourceId);
+            this.tabPage_Conditions_Creator.Controls.Add(this.textBox_SourceEntry);
+            this.tabPage_Conditions_Creator.Controls.Add(this.label_SourceEntry);
+            this.tabPage_Conditions_Creator.Controls.Add(this.textBox_SourceGroup);
+            this.tabPage_Conditions_Creator.Controls.Add(this.label_ConditionSourceGroup);
+            this.tabPage_Conditions_Creator.Controls.Add(this.comboBox_ConditionSourceType);
+            this.tabPage_Conditions_Creator.Controls.Add(this.label_ConditionSourceType);
+            this.tabPage_Conditions_Creator.Location = new System.Drawing.Point(4, 29);
+            this.tabPage_Conditions_Creator.Name = "tabPage_Conditions_Creator";
+            this.tabPage_Conditions_Creator.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage_Conditions_Creator.Size = new System.Drawing.Size(2040, 955);
+            this.tabPage_Conditions_Creator.TabIndex = 7;
+            this.tabPage_Conditions_Creator.Text = "Conditions Creator";
+            this.tabPage_Conditions_Creator.UseVisualStyleBackColor = true;
+            // 
+            // button_ClearConditions
+            // 
+            this.button_ClearConditions.Enabled = false;
+            this.button_ClearConditions.Location = new System.Drawing.Point(344, 409);
+            this.button_ClearConditions.Name = "button_ClearConditions";
+            this.button_ClearConditions.Size = new System.Drawing.Size(138, 31);
+            this.button_ClearConditions.TabIndex = 26;
+            this.button_ClearConditions.Text = "Clear Conditions";
+            this.button_ClearConditions.UseVisualStyleBackColor = true;
+            this.button_ClearConditions.Click += new System.EventHandler(this.button_ClearConditions_Click);
+            // 
+            // button_AddCondition
+            // 
+            this.button_AddCondition.Enabled = false;
+            this.button_AddCondition.Location = new System.Drawing.Point(12, 409);
+            this.button_AddCondition.Name = "button_AddCondition";
+            this.button_AddCondition.Size = new System.Drawing.Size(126, 31);
+            this.button_AddCondition.TabIndex = 25;
+            this.button_AddCondition.Text = "Add Condition";
+            this.button_AddCondition.UseVisualStyleBackColor = true;
+            this.button_AddCondition.Click += new System.EventHandler(this.button_AddCondition_Click);
+            // 
+            // textBox_ConditionsOutput
+            // 
+            this.textBox_ConditionsOutput.Enabled = false;
+            this.textBox_ConditionsOutput.Location = new System.Drawing.Point(976, 6);
+            this.textBox_ConditionsOutput.Multiline = true;
+            this.textBox_ConditionsOutput.Name = "textBox_ConditionsOutput";
+            this.textBox_ConditionsOutput.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.textBox_ConditionsOutput.Size = new System.Drawing.Size(1057, 936);
+            this.textBox_ConditionsOutput.TabIndex = 24;
+            // 
+            // label_ScriptName
+            // 
+            this.label_ScriptName.AutoSize = true;
+            this.label_ScriptName.Location = new System.Drawing.Point(8, 366);
+            this.label_ScriptName.Name = "label_ScriptName";
+            this.label_ScriptName.Size = new System.Drawing.Size(96, 20);
+            this.label_ScriptName.TabIndex = 23;
+            this.label_ScriptName.Text = "ScriptName:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(8, 334);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(146, 20);
+            this.label3.TabIndex = 22;
+            this.label3.Text = "Negative Condition:";
+            // 
+            // label_ConditionValue3
+            // 
+            this.label_ConditionValue3.AutoSize = true;
+            this.label_ConditionValue3.Location = new System.Drawing.Point(8, 302);
+            this.label_ConditionValue3.Name = "label_ConditionValue3";
+            this.label_ConditionValue3.Size = new System.Drawing.Size(138, 20);
+            this.label_ConditionValue3.TabIndex = 21;
+            this.label_ConditionValue3.Text = "Condition Value 3:";
+            // 
+            // labelConditionValue2
+            // 
+            this.labelConditionValue2.AutoSize = true;
+            this.labelConditionValue2.Location = new System.Drawing.Point(8, 269);
+            this.labelConditionValue2.Name = "labelConditionValue2";
+            this.labelConditionValue2.Size = new System.Drawing.Size(138, 20);
+            this.labelConditionValue2.TabIndex = 20;
+            this.labelConditionValue2.Text = "Condition Value 2:";
+            // 
+            // label_ConditionValue1
+            // 
+            this.label_ConditionValue1.AutoSize = true;
+            this.label_ConditionValue1.Location = new System.Drawing.Point(8, 238);
+            this.label_ConditionValue1.Name = "label_ConditionValue1";
+            this.label_ConditionValue1.Size = new System.Drawing.Size(138, 20);
+            this.label_ConditionValue1.TabIndex = 19;
+            this.label_ConditionValue1.Text = "Condition Value 1:";
+            // 
+            // textBox_ScriptName
+            // 
+            this.textBox_ScriptName.Enabled = false;
+            this.textBox_ScriptName.Location = new System.Drawing.Point(160, 363);
+            this.textBox_ScriptName.MaxLength = 50;
+            this.textBox_ScriptName.Name = "textBox_ScriptName";
+            this.textBox_ScriptName.Size = new System.Drawing.Size(320, 26);
+            this.textBox_ScriptName.TabIndex = 18;
+            // 
+            // textBox_NegativeCondition
+            // 
+            this.textBox_NegativeCondition.Enabled = false;
+            this.textBox_NegativeCondition.Location = new System.Drawing.Point(160, 331);
+            this.textBox_NegativeCondition.MaxLength = 1;
+            this.textBox_NegativeCondition.Name = "textBox_NegativeCondition";
+            this.textBox_NegativeCondition.Size = new System.Drawing.Size(30, 26);
+            this.textBox_NegativeCondition.TabIndex = 17;
+            this.textBox_NegativeCondition.Text = "0";
+            this.textBox_NegativeCondition.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBox_ConditionValue3
+            // 
+            this.textBox_ConditionValue3.Enabled = false;
+            this.textBox_ConditionValue3.Location = new System.Drawing.Point(160, 298);
+            this.textBox_ConditionValue3.MaxLength = 6;
+            this.textBox_ConditionValue3.Name = "textBox_ConditionValue3";
+            this.textBox_ConditionValue3.Size = new System.Drawing.Size(100, 26);
+            this.textBox_ConditionValue3.TabIndex = 16;
+            // 
+            // textBox_ConditionValue2
+            // 
+            this.textBox_ConditionValue2.Enabled = false;
+            this.textBox_ConditionValue2.Location = new System.Drawing.Point(160, 268);
+            this.textBox_ConditionValue2.MaxLength = 6;
+            this.textBox_ConditionValue2.Name = "textBox_ConditionValue2";
+            this.textBox_ConditionValue2.Size = new System.Drawing.Size(100, 26);
+            this.textBox_ConditionValue2.TabIndex = 15;
+            // 
+            // textBox_ConditionValue1
+            // 
+            this.textBox_ConditionValue1.Enabled = false;
+            this.textBox_ConditionValue1.Location = new System.Drawing.Point(160, 235);
+            this.textBox_ConditionValue1.MaxLength = 6;
+            this.textBox_ConditionValue1.Name = "textBox_ConditionValue1";
+            this.textBox_ConditionValue1.Size = new System.Drawing.Size(100, 26);
+            this.textBox_ConditionValue1.TabIndex = 14;
+            // 
+            // textBox_ConditionTarget
+            // 
+            this.textBox_ConditionTarget.Enabled = false;
+            this.textBox_ConditionTarget.Location = new System.Drawing.Point(160, 203);
+            this.textBox_ConditionTarget.MaxLength = 1;
+            this.textBox_ConditionTarget.Name = "textBox_ConditionTarget";
+            this.textBox_ConditionTarget.Size = new System.Drawing.Size(30, 26);
+            this.textBox_ConditionTarget.TabIndex = 13;
+            this.textBox_ConditionTarget.Text = "0";
+            this.textBox_ConditionTarget.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label_ConditionTarget
+            // 
+            this.label_ConditionTarget.AutoSize = true;
+            this.label_ConditionTarget.Location = new System.Drawing.Point(8, 206);
+            this.label_ConditionTarget.Name = "label_ConditionTarget";
+            this.label_ConditionTarget.Size = new System.Drawing.Size(130, 20);
+            this.label_ConditionTarget.TabIndex = 12;
+            this.label_ConditionTarget.Text = "Condition Target:";
+            // 
+            // label_ConditionType
+            // 
+            this.label_ConditionType.AutoSize = true;
+            this.label_ConditionType.Location = new System.Drawing.Point(8, 172);
+            this.label_ConditionType.Name = "label_ConditionType";
+            this.label_ConditionType.Size = new System.Drawing.Size(118, 20);
+            this.label_ConditionType.TabIndex = 11;
+            this.label_ConditionType.Text = "Condition Type:";
+            // 
+            // comboBox_ConditionType
+            // 
+            this.comboBox_ConditionType.Enabled = false;
+            this.comboBox_ConditionType.FormattingEnabled = true;
+            this.comboBox_ConditionType.Location = new System.Drawing.Point(160, 169);
+            this.comboBox_ConditionType.Name = "comboBox_ConditionType";
+            this.comboBox_ConditionType.Size = new System.Drawing.Size(320, 28);
+            this.comboBox_ConditionType.TabIndex = 10;
+            this.comboBox_ConditionType.DropDown += new System.EventHandler(this.comboBox_ConditionType_DropDown);
+            this.comboBox_ConditionType.SelectedIndexChanged += new System.EventHandler(this.comboBox_ConditionType_SelectedIndexChanged);
+            // 
+            // textBox_ElseGroup
+            // 
+            this.textBox_ElseGroup.Enabled = false;
+            this.textBox_ElseGroup.Location = new System.Drawing.Point(160, 138);
+            this.textBox_ElseGroup.MaxLength = 2;
+            this.textBox_ElseGroup.Name = "textBox_ElseGroup";
+            this.textBox_ElseGroup.Size = new System.Drawing.Size(50, 26);
+            this.textBox_ElseGroup.TabIndex = 9;
+            this.textBox_ElseGroup.Text = "0";
+            this.textBox_ElseGroup.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label_ElseGroup
+            // 
+            this.label_ElseGroup.AutoSize = true;
+            this.label_ElseGroup.Location = new System.Drawing.Point(8, 142);
+            this.label_ElseGroup.Name = "label_ElseGroup";
+            this.label_ElseGroup.Size = new System.Drawing.Size(93, 20);
+            this.label_ElseGroup.TabIndex = 8;
+            this.label_ElseGroup.Text = "Else Group:";
+            // 
+            // textBox_SourceId
+            // 
+            this.textBox_SourceId.Enabled = false;
+            this.textBox_SourceId.Location = new System.Drawing.Point(160, 106);
+            this.textBox_SourceId.MaxLength = 1;
+            this.textBox_SourceId.Name = "textBox_SourceId";
+            this.textBox_SourceId.Size = new System.Drawing.Size(30, 26);
+            this.textBox_SourceId.TabIndex = 7;
+            this.textBox_SourceId.Text = "0";
+            this.textBox_SourceId.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label_SourceId
+            // 
+            this.label_SourceId.AutoSize = true;
+            this.label_SourceId.Location = new System.Drawing.Point(8, 109);
+            this.label_SourceId.Name = "label_SourceId";
+            this.label_SourceId.Size = new System.Drawing.Size(82, 20);
+            this.label_SourceId.TabIndex = 6;
+            this.label_SourceId.Text = "Source Id:";
+            // 
+            // textBox_SourceEntry
+            // 
+            this.textBox_SourceEntry.Enabled = false;
+            this.textBox_SourceEntry.Location = new System.Drawing.Point(160, 74);
+            this.textBox_SourceEntry.MaxLength = 6;
+            this.textBox_SourceEntry.Name = "textBox_SourceEntry";
+            this.textBox_SourceEntry.Size = new System.Drawing.Size(100, 26);
+            this.textBox_SourceEntry.TabIndex = 5;
+            // 
+            // label_SourceEntry
+            // 
+            this.label_SourceEntry.AutoSize = true;
+            this.label_SourceEntry.Location = new System.Drawing.Point(8, 77);
+            this.label_SourceEntry.Name = "label_SourceEntry";
+            this.label_SourceEntry.Size = new System.Drawing.Size(105, 20);
+            this.label_SourceEntry.TabIndex = 4;
+            this.label_SourceEntry.Text = "Source Entry:";
+            // 
+            // textBox_SourceGroup
+            // 
+            this.textBox_SourceGroup.Enabled = false;
+            this.textBox_SourceGroup.Location = new System.Drawing.Point(160, 42);
+            this.textBox_SourceGroup.MaxLength = 6;
+            this.textBox_SourceGroup.Name = "textBox_SourceGroup";
+            this.textBox_SourceGroup.Size = new System.Drawing.Size(100, 26);
+            this.textBox_SourceGroup.TabIndex = 3;
+            // 
+            // label_ConditionSourceGroup
+            // 
+            this.label_ConditionSourceGroup.AutoSize = true;
+            this.label_ConditionSourceGroup.Location = new System.Drawing.Point(8, 45);
+            this.label_ConditionSourceGroup.Name = "label_ConditionSourceGroup";
+            this.label_ConditionSourceGroup.Size = new System.Drawing.Size(113, 20);
+            this.label_ConditionSourceGroup.TabIndex = 2;
+            this.label_ConditionSourceGroup.Text = "Source Group:";
+            // 
+            // comboBox_ConditionSourceType
+            // 
+            this.comboBox_ConditionSourceType.FormattingEnabled = true;
+            this.comboBox_ConditionSourceType.Location = new System.Drawing.Point(160, 6);
+            this.comboBox_ConditionSourceType.Name = "comboBox_ConditionSourceType";
+            this.comboBox_ConditionSourceType.Size = new System.Drawing.Size(320, 28);
+            this.comboBox_ConditionSourceType.TabIndex = 1;
+            this.comboBox_ConditionSourceType.DropDown += new System.EventHandler(this.comboBox_ConditionSourceType_DropDown);
+            this.comboBox_ConditionSourceType.SelectedIndexChanged += new System.EventHandler(this.comboBox_ConditionSourceType_SelectedIndexChanged);
+            // 
+            // label_ConditionSourceType
+            // 
+            this.label_ConditionSourceType.AutoSize = true;
+            this.label_ConditionSourceType.Location = new System.Drawing.Point(8, 9);
+            this.label_ConditionSourceType.Name = "label_ConditionSourceType";
+            this.label_ConditionSourceType.Size = new System.Drawing.Size(102, 20);
+            this.label_ConditionSourceType.TabIndex = 0;
+            this.label_ConditionSourceType.Text = "Source Type:";
+            // 
             // statusStrip_LoadedFile
             // 
             this.statusStrip_LoadedFile.BackColor = System.Drawing.Color.LightGray;
-            this.statusStrip_LoadedFile.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.statusStrip_LoadedFile.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel_FileStatus,
             this.toolStripStatusLabel_CurrentAction});
@@ -1342,6 +1667,8 @@
             this.coreScriptTemplates.PerformLayout();
             this.tabPage_Achievements.ResumeLayout(false);
             this.tabPage_Achievements.PerformLayout();
+            this.tabPage_Conditions_Creator.ResumeLayout(false);
+            this.tabPage_Conditions_Creator.PerformLayout();
             this.statusStrip_LoadedFile.ResumeLayout(false);
             this.statusStrip_LoadedFile.PerformLayout();
             this.ResumeLayout(false);
@@ -1448,6 +1775,34 @@
         public System.Windows.Forms.TreeView treeView_Achievements_ModifierTreeChildNodes;
         private System.Windows.Forms.TextBox textBox_SpellDestinations;
         private System.Windows.Forms.Label label_SpellDestinations;
+        private System.Windows.Forms.TabPage tabPage_Conditions_Creator;
+        public System.Windows.Forms.ComboBox comboBox_ConditionSourceType;
+        private System.Windows.Forms.Label label_ConditionSourceType;
+        private System.Windows.Forms.Label label_ConditionType;
+        public System.Windows.Forms.ComboBox comboBox_ConditionType;
+        public System.Windows.Forms.TextBox textBox_ElseGroup;
+        private System.Windows.Forms.Label label_ElseGroup;
+        public System.Windows.Forms.TextBox textBox_SourceId;
+        private System.Windows.Forms.Label label_SourceId;
+        public System.Windows.Forms.TextBox textBox_SourceEntry;
+        private System.Windows.Forms.Label label_SourceEntry;
+        public System.Windows.Forms.TextBox textBox_SourceGroup;
+        private System.Windows.Forms.Label label_ConditionSourceGroup;
+        private System.Windows.Forms.Label label_ScriptName;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label_ConditionValue3;
+        private System.Windows.Forms.Label labelConditionValue2;
+        private System.Windows.Forms.Label label_ConditionValue1;
+        public System.Windows.Forms.TextBox textBox_ScriptName;
+        public System.Windows.Forms.TextBox textBox_NegativeCondition;
+        public System.Windows.Forms.TextBox textBox_ConditionValue3;
+        public System.Windows.Forms.TextBox textBox_ConditionValue2;
+        public System.Windows.Forms.TextBox textBox_ConditionValue1;
+        public System.Windows.Forms.TextBox textBox_ConditionTarget;
+        private System.Windows.Forms.Label label_ConditionTarget;
+        public System.Windows.Forms.TextBox textBox_ConditionsOutput;
+        private System.Windows.Forms.Button button_AddCondition;
+        private System.Windows.Forms.Button button_ClearConditions;
     }
 }
 
