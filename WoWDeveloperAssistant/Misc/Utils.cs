@@ -20,8 +20,9 @@ namespace WoWDeveloperAssistant.Misc
             BUILD_8_2_5   = 5,
             BUILD_8_3_0   = 6,
             BUILD_8_3_7   = 7,
-            BUILD_9_0_1   = 8, ///< Prepatch
-            BUILD_9_0_2   = 9, ///< Shadowlands
+            BUILD_9_0_1   = 8,
+            BUILD_9_0_2   = 9,
+            BUILD_9_0_5   = 10
         };
 
         public static string GetValueWithoutComma(this float value)
@@ -183,6 +184,15 @@ namespace WoWDeveloperAssistant.Misc
             foreach (var packet in dict.Values.Where(packet => packet.packetType == Packet.PacketTypes.SMSG_UPDATE_OBJECT && packet.index == index))
             {
                 packet.parsedPacketsList.Add(updatePacket);
+                return;
+            }
+        }
+
+        public static void AddSourceFromAttackStopPacket(this SortedDictionary<long, Packet> dict, AttackStopPacket attackStopPacket, long index)
+        {
+            foreach (var packet in dict.Values.Where(packet => packet.packetType == Packet.PacketTypes.SMSG_ATTACK_STOP && packet.index == index))
+            {
+                packet.parsedPacketsList.Add(attackStopPacket);
                 return;
             }
         }
